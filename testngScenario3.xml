@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Scenario 3 Suite">
+
+	<test thread-count="1" name="Corporate Wellness Test Case Browser Chrome">
+
+		<parameter name="browserType" value="Chrome" />
+
+		<parameter name="url" value="https://www.practo.com/" />
+
+		<groups>
+
+			<define name="SuperGroup">
+				<!-- Include and Exclude groups to run -->
+				
+				<include name="basics" />
+				<include name="search" />
+				<include name="corporate" />
+				<include name="cities" />
+
+			</define> <!-- Define Group -->
+			<run>
+				<!-- Include and Exclude groups to run -->
+
+				<include name="SuperGroup" />
+				<exclude name="cities" />
+				<exclude name="search" />
+			</run>
+		</groups><!-- Groups -->
+		
+		<classes>
+			<!-- Add the class name to be tested -->
+
+			<class name="com.TestScenarios.SearchHospitals" />
+			<class name="com.TestScenarios.TopCities" />
+			<class name="com.TestScenarios.CorporateWellness" />
+		</classes> <!-- Classes -->
+
+	</test> <!-- Test -->
+	
+	<test thread-count="1" name="Corporate Wellness Test Case Browser Firefox">
+
+		<parameter name="browserType" value="Firefox" />
+
+		<parameter name="url" value="https://www.practo.com/" />
+
+		<groups>
+
+			<define name="SuperGroup">
+				<!-- Include and Exclude groups to run -->
+				
+				<include name="basics" />
+				<include name="search" />
+				<include name="corporate" />
+				<include name="cities" />
+
+			</define> <!-- Define Group -->
+			<run>
+				<!-- Include and Exclude groups to run -->
+
+				<include name="SuperGroup" />
+				<exclude name="cities" />
+				<exclude name="search" />
+			</run>
+		</groups><!-- Groups -->
+		
+		<classes>
+			<!-- Add the class name to be tested -->
+
+			<class name="testCases.Test1SearchHospitals" />
+			<class name="testCases.Test2TopCities" />
+			<class name="testCases.Test3CorporateWellness" />
+		</classes> <!-- Classes -->
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

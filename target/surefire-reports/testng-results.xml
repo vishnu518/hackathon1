@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-07-26T12:12:24 IST" name="Surefire suite" finished-at="2021-07-26T12:13:53 IST" duration-ms="89211">
+    <groups>
+      <group name="search">
+        <method signature="Test1SearchHospitals.search(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.Test1SearchHospitals@4d1c00d0]" name="search" class="testCases.Test1SearchHospitals"/>
+      </group> <!-- search -->
+      <group name="cities">
+        <method signature="Test2TopCities.getCityNames()[pri:2, instance:testCases.Test2TopCities@2cd76f31]" name="getCityNames" class="testCases.Test2TopCities"/>
+      </group> <!-- cities -->
+      <group name="corporate">
+        <method signature="Test3CorporateWellness.setCorporateWellnessForm(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Test3CorporateWellness@367ffa75]" name="setCorporateWellnessForm" class="testCases.Test3CorporateWellness"/>
+      </group> <!-- corporate -->
+    </groups>
+    <test started-at="2021-07-26T12:12:24 IST" name="Surefire test" finished-at="2021-07-26T12:13:53 IST" duration-ms="89211">
+      <class name="testCases.Test1SearchHospitals">
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:testCases.Test1SearchHospitals@4d1c00d0]" started-at="2021-07-26T12:12:24 IST" name="createDriver" finished-at="2021-07-26T12:12:27 IST" duration-ms="3188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method is-config="true" signature="homepage()[pri:0, instance:testCases.Test1SearchHospitals@4d1c00d0]" started-at="2021-07-26T12:12:27 IST" name="homepage" finished-at="2021-07-26T12:12:28 IST" duration-ms="982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+        <test-method signature="search(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.Test1SearchHospitals@4d1c00d0]" started-at="2021-07-26T12:12:29 IST" name="search" data-provider="testData" finished-at="2021-07-26T12:13:10 IST" duration-ms="41445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hospital]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:testCases.Test1SearchHospitals@4d1c00d0]" started-at="2021-07-26T12:13:10 IST" name="endTest" finished-at="2021-07-26T12:13:10 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.Test1SearchHospitals@4d1c00d0]" started-at="2021-07-26T12:13:53 IST" name="closeDriver" finished-at="2021-07-26T12:13:53 IST" duration-ms="882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- testCases.Test1SearchHospitals -->
+      <class name="testCases.Test3CorporateWellness">
+        <test-method is-config="true" signature="homepage()[pri:0, instance:testCases.Test3CorporateWellness@367ffa75]" started-at="2021-07-26T12:13:16 IST" name="homepage" finished-at="2021-07-26T12:13:16 IST" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+        <test-method is-config="true" signature="corporateWellnessPage()[pri:0, instance:testCases.Test3CorporateWellness@367ffa75]" started-at="2021-07-26T12:13:17 IST" name="corporateWellnessPage" finished-at="2021-07-26T12:13:27 IST" duration-ms="10217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- corporateWellnessPage -->
+        <test-method signature="setCorporateWellnessForm(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Test3CorporateWellness@367ffa75]" started-at="2021-07-26T12:13:27 IST" name="setCorporateWellnessForm" data-provider="testData" finished-at="2021-07-26T12:13:52 IST" duration-ms="25734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Postive]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Saanvi Ray]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CTS]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[cts@gmail]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[6532489720]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Please enter valid email address]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setCorporateWellnessForm -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:testCases.Test3CorporateWellness@367ffa75]" started-at="2021-07-26T12:13:52 IST" name="endTest" finished-at="2021-07-26T12:13:53 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- testCases.Test3CorporateWellness -->
+      <class name="testCases.Test2TopCities">
+        <test-method is-config="true" signature="homepage()[pri:0, instance:testCases.Test2TopCities@2cd76f31]" started-at="2021-07-26T12:13:10 IST" name="homepage" finished-at="2021-07-26T12:13:11 IST" duration-ms="609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+        <test-method signature="getCityNames()[pri:2, instance:testCases.Test2TopCities@2cd76f31]" started-at="2021-07-26T12:13:11 IST" name="getCityNames" finished-at="2021-07-26T12:13:16 IST" duration-ms="4877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityNames -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:testCases.Test2TopCities@2cd76f31]" started-at="2021-07-26T12:13:16 IST" name="endTest" finished-at="2021-07-26T12:13:16 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.Test2TopCities@2cd76f31]" started-at="2021-07-26T12:13:53 IST" name="closeDriver" finished-at="2021-07-26T12:13:53 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- testCases.Test2TopCities -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

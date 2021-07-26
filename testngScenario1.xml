@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Scenario 1 Suite">
+
+	<test thread-count="1" name="Search Hospital Test Case Browser Chrome">
+
+		<parameter name="browserType" value="Chrome" />
+
+		<parameter name="url" value="https://www.practo.com/" />
+
+		<groups>
+
+			<define name="SuperGroup">
+				<!-- Include and Exclude groups to run -->
+				
+				<include name="basics" />
+				<include name="search" />
+				<include name="corporate" />
+				<include name="cities" />
+
+			</define> <!-- Define Group -->
+			<run>
+				<!-- Include and Exclude groups to run -->
+
+				<include name="SuperGroup" />
+				<exclude name="corporate" />
+				<exclude name="cities" />
+			</run>
+		</groups><!-- Groups -->
+
+		<classes>
+			<!-- Add the class name to be tested -->
+
+			<class name="testCases.Test1SearchHospitals" />
+			<class name="testCases.Test2TopCities" />
+			<class name="testCases.Test3CorporateWellness" />
+		</classes> <!-- Classes -->
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

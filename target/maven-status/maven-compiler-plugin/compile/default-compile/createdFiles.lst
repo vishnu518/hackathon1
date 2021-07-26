@@ -1,0 +1,10 @@
+base\TestBase.class
+util\FailReport.class
+pages\CorporateWellnessPage.class
+pages\DiagnosticPage.class
+util\ReportsGeneration.class
+pages\PractoHomePage.class
+util\HighlightElement.class
+util\Screenshot.class
+util\ExcelReadWrite.class
+pages\AfterSearchPage.class
