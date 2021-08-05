@@ -76,8 +76,9 @@ public class Test2TopCities extends TestBase{
 			takeScreenShot("Top Cities");
 			
 			int rowIndex = 1;
+			System.out.println("Top Cities :");
 			for (WebElement topcities : citynames) {
-				System.out.println("Top Cities :");
+				
 				System.out.println(topcities.getText());	// DISPLAYING THE TOP CITIES
 				row = sheet.getRow(rowIndex);
 				if (row == null)
